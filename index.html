@@ -6,61 +6,25 @@
   <title>Ocean Windshield & Car Wash</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      text-align: center;
+      background-color: white;
+      color: black;
     }
 
     header {
-      background-color: #b00000;
+      background-color: red;
       color: white;
-      padding: 40px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-      text-transform: uppercase;
+      text-align: center;
+      padding: 20px 10px;
     }
 
     .address {
       font-size: 16px;
-      margin-top: 10px;
-    }
-
-    .promo {
-      background-color: #ffebeb;
-      color: #b00000;
-      font-size: 24px;
-      font-weight: bold;
-      padding: 20px;
-      margin: 30px auto;
-      max-width: 500px;
-      border: 2px solid #b00000;
-      border-radius: 10px;
-    }
-
-    .highlight {
-      background-color: #fdf5e6; /* Cream white */
-      padding: 25px;
-      margin: 30px auto;
-      max-width: 500px;
-      border-radius: 10px;
-      font-size: 18px;
-      color: #000;
-    }
-
-    .contact {
-      margin-top: 20px;
-      font-weight: bold;
-      font-size: 18px;
     }
 
     .whatsapp-button {
       display: inline-block;
-      margin-top: 20px;
       background-color: #25D366;
       color: white;
       padding: 12px 20px;
@@ -68,67 +32,113 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 16px;
+      margin: 10px;
     }
 
-    .whatsapp-button:hover {
-      background-color: #1ebd5a;
-    }
-
-    footer {
-      margin-top: 40px;
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 20px;
-      background-color: #eee;
-      font-size: 14px;
-      color: #555;
+      gap: 20px;
+    }
+
+    .box {
+      background-color: #fff3f3;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .box h2 {
+      color: red;
+      margin-top: 0;
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .about-us, .hours {
+      background-color: #fff3f3;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .about-us h2, .hours h2 {
+      color: #c40000;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .hours table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    .hours td {
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
+
+  <!-- WhatsApp Button at Top -->
+  <div style="background-color: #f4f4f4; padding: 10px; text-align: center;">
+    <a class="whatsapp-button" href="https://wa.me/27692258087" target="_blank">
+      💬 Chat with us on WhatsApp
+    </a>
+  </div>
 
   <header>
     <h1>Ocean Windshield & Car Wash</h1>
     <p class="address">21546 Madolo Close, Mamelodi East, Ikageng</p>
   </header>
 
-  <div class="promo">R20 Wash After Fitment!</div>
+  <!-- About Us Section -->
+  <section class="about-us">
+    <h2>About Us</h2>
+    <p>
+      Ocean Windshield & Car Wash is a trusted local business based in Mamelodi East, Pretoria.
+      We specialize in windscreen replacements, chip and crack repairs, vehicle washes, polishing,
+      and valet services — always delivering fast, affordable, and reliable service with a smile.
+    </p>
+  </section>
 
-  <div class="highlight">
-    <h3>Our Services</h3>
-    <p>• Windscreen Replacement</p>
-    <p>• Chip/Crack Repair</p>
-    <p>• Wash & Polish</p>
+  <div class="content">
+    <!-- Business Hours on Left -->
+    <div class="box">
+      <h2>Business Hours</h2>
+      <table>
+        <tr><td>Monday–Friday</td><td>08:00 – 18:00</td></tr>
+        <tr><td>Saturday</td><td>08:00 – 18:00</td></tr>
+        <tr><td>Sunday</td><td>09:00 – 15:00</td></tr>
+      </table>
+    </div>
+
+    <!-- Services on Right -->
+    <div class="box">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Windscreen Replacement</li>
+        <li>Chip & Crack Repairs</li>
+        <li>Full Car Wash</li>
+        <li>Body Polishing</li>
+        <li>Valet Services</li>
+      </ul>
+    </div>
   </div>
 
   <p class="contact">
-  📞 Call: 084 720 7414 or 069 225 8087<br>
-  📧 Email: <a href="mailto:oceanwindshield@gmail.com">oceanwindshield@gmail.com</a>
+    📞 Call: 081 676 7221 or 069 225 8087<br>
+    📧 Email: <a href="mailto:oceanwindshield@gmail.com">oceanwindshield@gmail.com</a>
   </p>
-
-  <a class="whatsapp-button" href="https://wa.me/27692258087" target="_blank">
-  💬 Chat with us on WhatsApp
-  </a>
-
-  <footer>
-    &copy; 2025 Ocean Windshield & Car Wash. All rights reserved.
-  </footer>
-  <section class="about-us">
-  <h2>About Us</h2>
-  <p>
-    Ocean Windshield & Car Wash is a trusted local business based in Mamelodi East, Pretoria.
-    We specialize in windscreen replacements, chip and crack repairs, vehicle washes, polishing,
-    and valet services — always delivering fast, affordable, and reliable service with a smile.
-  </p>
-</section>
-
-<section class="hours">
-  <h2>Business Hours</h2>
-  <table>
-    <tr><td>Monday–Friday</td><td>08:00 – 18:00</td></tr>
-    <tr><td>Saturday</td><td>08:00 – 18:00</td></tr>
-    <tr><td>Sunday</td><td>09:00 – 15:00</td></tr>
-  </table>
-</section>
-
 
 </body>
 </html>
