@@ -8,15 +8,15 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fefefe;
+      background-color: #ffffff;
       color: #333;
+      text-align: center;
     }
 
     header {
       background-color: #b00000;
       color: white;
-      padding: 30px 20px;
-      text-align: center;
+      padding: 40px 20px;
     }
 
     header h1 {
@@ -25,9 +25,9 @@
       text-transform: uppercase;
     }
 
-    section {
-      padding: 30px 20px;
-      text-align: center;
+    .address {
+      font-size: 16px;
+      margin-top: 10px;
     }
 
     .promo {
@@ -36,15 +36,20 @@
       font-size: 24px;
       font-weight: bold;
       padding: 20px;
-      margin: 20px auto;
+      margin: 30px auto;
       max-width: 500px;
       border: 2px solid #b00000;
       border-radius: 10px;
     }
 
-    .info {
+    .highlight {
+      background-color: #fdf5e6; /* Cream white */
+      padding: 25px;
+      margin: 30px auto;
+      max-width: 500px;
+      border-radius: 10px;
       font-size: 18px;
-      margin-top: 10px;
+      color: #000;
     }
 
     .contact {
@@ -53,27 +58,28 @@
       font-size: 18px;
     }
 
-    .address {
+    .whatsapp-button {
+      display: inline-block;
       margin-top: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 16px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebd5a;
     }
 
     footer {
       margin-top: 40px;
       padding: 20px;
       background-color: #eee;
-      text-align: center;
       font-size: 14px;
       color: #555;
-    }
-
-    a {
-      color: #b00000;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -81,24 +87,23 @@
 
   <header>
     <h1>Ocean Windshield & Car Wash</h1>
+    <p class="address">21546 Madolo Close, Mamelodi East, Ikageng</p>
   </header>
 
-  <section>
-    <div class="promo">R20 Wash After Fitment!</div>
+  <div class="promo">R20 Wash After Fitment!</div>
 
-    <p class="info">
-      We replace windscreens, repair chips & cracks,<br>
-      polish, valet, and wash cars.
-    </p>
+  <div class="highlight">
+    <h3>Our Services</h3>
+    <p>• Windscreen Replacement</p>
+    <p>• Chip/Crack Repair</p>
+    <p>• Wash & Polish</p>
+  </div>
 
-    <p class="contact">
-      📞 Call: 081 676 7221 or 069 225 8087
-    </p>
+  <p class="contact">📞 Call: 081 676 7221 or 069 225 8087</p>
 
-    <p class="address">
-      📍 21546 Madolo Close, Mamelodi East, Ikageng
-    </p>
-  </section>
+  <a class="whatsapp-button" href="https://wa.me/27692258087" target="_blank">
+    💬 Chat with us on WhatsApp
+  </a>
 
   <footer>
     &copy; 2025 Ocean Windshield & Car Wash. All rights reserved.
